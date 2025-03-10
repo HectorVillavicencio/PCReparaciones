@@ -12,23 +12,23 @@ export const routes: Routes = [
         component: HomeComponent
     },
     {
-        path:'PCReparaciones/blog',
+        path:'blog',
         component: BlogComponent
     },
     {
-        path:'PCReparaciones/post',
+        path:'post',
         component: PostBlogComponent
     },
     {
-        path:'PCReparaciones/contact',
+        path:'contact',
         component: ContactoComponent
     },
     {
-        path:'PCReparaciones/products',
+        path:'products',
         component: ProductosComponent
     },
     {
-        path: 'PCReparaciones/product',
+        path: 'product',
         component: PostProductoComponent
     }
 ];
