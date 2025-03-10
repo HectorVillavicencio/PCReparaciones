@@ -1,0 +1,39 @@
+<body class="bg-neutral-900">
+    <app-header class="pt-16" />
+<app-navbar class="fixed top-0 left-0 w-full z-50 shadow-md" />
+
+<div class="container mx-auto px-4 py-8 bg-neutral-900 min-h-screen">
+    <div class="product-card bg-gray-800 text-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center">
+      <!-- Imagen del Producto -->
+      <div class="product-image flex-1 max-w-full md:max-w-[45%]">
+        <img src="https://i5.walmartimages.com/asr/94c5c6a9-7958-4193-98d6-f95ca29f92ab.e4beab67a3c900a58e4e7db13c03cd73.jpeg" alt="Imagen del Producto" class="w-full h-auto rounded-lg shadow-md transform transition duration-300 hover:scale-105" />
+      </div>
+  
+      <!-- Información del Producto -->
+      <div class="product-info flex-1 mt-4 md:mt-0 md:pl-8">
+        <h2 class="product-title text-3xl font-bold text-center md:text-left text-orange-500">Nombre del Producto</h2>
+        <p class="product-description mt-4 text-gray-400 text-center md:text-left">
+          Aquí va la descripción general del producto. Esta es una breve descripción que resalta las características del producto.
+        </p>
+  
+        <!-- Detalles del Producto -->
+        <div class="product-details mt-4 text-gray-300">
+          <div><strong>RAM:</strong> 16GB DDR4</div>
+          <div><strong>Procesador:</strong> Intel Core i7 10ª Gen</div>
+          <div><strong>Motherboard:</strong> ASUS TUF Z490</div>
+          <div><strong>Disco:</strong> 512GB SSD</div>
+          <div><strong>Fuente:</strong> 650W Bronze</div>
+          <div><strong>Conectividad:</strong> WiFi 6, Bluetooth 5.0</div>
+          <div><strong>Sistema Operativo:</strong> Windows 10</div>
+          <div><strong>Placa de Video:</strong> NVIDIA RTX 3070</div>
+        </div>
+  
+        <!-- Precio del Producto -->
+        <div class="product-price mt-6 text-xl font-bold text-center text-white">
+          $1,499.99
+        </div>
+      </div>
+    </div>
+</div>
+<app-footer/>
+</body>

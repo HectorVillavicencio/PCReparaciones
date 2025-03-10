@@ -1,14 +1,24 @@
 <app-header class="pt-16" />
 <app-navbar class="fixed top-0 left-0 w-full z-50 shadow-md" />
-<p>blog works!</p>
 
-<!-- Contenedor flex con elementos centrados -->
-<div class="flex flex-wrap gap-[9px] justify-center">
-    <app-card class=""></app-card>
-    <app-card class=""></app-card>
-    <app-card class=""></app-card>
-    <app-card class=""></app-card>
-    <app-card class=""></app-card>
-    <app-card class=""></app-card>
-    <!-- Más cards aquí -->
+<!-- Contenedor del Blog con fondo oscuro -->
+<div class="bg-neutral-900 min-h-screen text-white py-10 flex flex-col items-center">
+    <div class="text-center px-4">
+        <h2 class="text-3xl font-bold">🖥️ Código y Café: Un Blog de Informática</h2>
+        <p class="mt-2 text-gray-300 text-lg">
+            Si la informática es lo tuyo, este es tu espacio. Hablamos de programación, hardware, ciberseguridad y todo lo que hace que el mundo digital funcione. Desde trucos útiles hasta tendencias tech, siempre con un toque simple y directo. ☕🚀
+        </p>
+    </div>
+
+    <!-- Contenedor Grid Centrando las Tarjetas -->
+    <div class="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 px-4 place-items-center">
+        <app-card class="w-[300px] bg-neutral-700 border border-neutral-600 shadow-lg"></app-card>
+        <app-card class="w-[300px] bg-neutral-700 border border-neutral-600 shadow-lg"></app-card>
+        <app-card class="w-[300px] bg-neutral-700 border border-neutral-600 shadow-lg"></app-card>
+        <app-card class="w-[300px] bg-neutral-700 border border-neutral-600 shadow-lg"></app-card>
+        <app-card class="w-[300px] bg-neutral-700 border border-neutral-600 shadow-lg"></app-card>
+        <app-card class="w-[300px] bg-neutral-700 border border-neutral-600 shadow-lg"></app-card>
+    </div>
 </div>
+
+<app-footer/>

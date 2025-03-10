@@ -1,0 +1,27 @@
+<app-header class="" />
+<app-navbar class="fixed top-0 left-0 w-full z-50 shadow-md" />
+
+<!-- contact.component.html -->
+<div class="bg-neutral-900 max-h-screen flex items-center justify-center  p-4">
+  <div class="max-w-lg w-full p-8 bg-neutral-700 rounded-2xl shadow-2xl">
+    <h2 class="text-3xl font-bold text-[#FF6347] text-center">Contacto</h2>
+    <p class="text-gray-300 text-center mt-2">
+      Completa el formulario para consultas sobre armado y reparación de PC.
+    </p>
+    <form class="mt-6 space-y-4">
+      <input type="text" placeholder="Nombre" class="w-full p-3 border border-gray-500 rounded-lg bg-neutral-800 text-white focus:ring-2 focus:ring-[#FF6347] focus:outline-none">
+      
+      <input type="email" placeholder="Correo Electrónico" class="w-full p-3 border border-gray-500 rounded-lg bg-neutral-800 text-white focus:ring-2 focus:ring-[#FF6347] focus:outline-none">
+      
+      <input type="text" placeholder="Ciudad y Provincia" class="w-full p-3 border border-gray-500 rounded-lg bg-neutral-800 text-white focus:ring-2 focus:ring-[#FF6347] focus:outline-none">
+      
+      <textarea placeholder="¿Cuál es tu consulta?" class="w-full p-3 border border-gray-500 rounded-lg bg-neutral-800 text-white focus:ring-2 focus:ring-[#FF6347] focus:outline-none h-32 resize-none"></textarea>
+      
+      <button type="submit" class="w-full bg-[#FF6347] text-white p-3 rounded-lg font-semibold transition-all hover:bg-white hover:text-[#FF6347] shadow-md cursor-pointer">
+        Enviar Mensaje
+      </button>
+    </form>
+  </div>
+</div>
+
+<app-footer/>
