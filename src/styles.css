@@ -9,5 +9,17 @@
   }
   
   .hover\:animate-shake:hover {
-    animation: shake 0.3s ease-in-out;
+    animation: shake 0.5s ease-in-out;
   }
+
+  @keyframes vertical-shake {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-6px); }
+    50% { transform: translateY(6px); }
+    75% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+.animate-vertical-shake {
+    animation: vertical-shake 7s ease-in-out infinite;
+}

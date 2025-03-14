@@ -1,0 +1,24 @@
+<div class="flex justify-center items-center h-screen">
+    <div
+      class="w-64 h-64 rounded-full border-4 border-dashed border-gray-400 flex justify-center items-center relative overflow-hidden"
+      (dragover)="onDragOver($event)"
+      (drop)="onDrop($event)"
+      (click)="fileInput?.click()"
+    >
+      <input
+        type="file"
+        #fileInput
+        class="hidden"
+        accept="image/*"
+        (change)="onFileSelect($event)"
+      />
+      <img
+        *ngIf="imageUrl"
+        [src]="imageUrl"
+        class="absolute w-full h-full object-cover"
+        alt="Uploaded Image"
+      />
+      <p *ngIf="!imageUrl" class="text-gray-500 text-center">Arrastra una imagen aquí o haz clic para seleccionar</p>
+    </div>
+  </div>
+  

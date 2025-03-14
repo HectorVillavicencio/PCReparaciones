@@ -5,6 +5,8 @@ import { PostBlogComponent } from './domains/products/pages/post-blog/post-blog.
 import { ContactoComponent } from './domains/products/pages/contacto/contacto.component';
 import { ProductosComponent } from './domains/products/pages/productos/productos.component';
 import { PostProductoComponent } from './domains/products/pages/post-producto/post-producto.component';
+import path from 'path';
+import { CirculoComponent } from './domains/products/pages/circulo/circulo.component';
 
 export const routes: Routes = [
     {
@@ -30,5 +32,9 @@ export const routes: Routes = [
     {
         path: 'product',
         component: PostProductoComponent
+    },
+    {
+        path: 'circulo',
+        component : CirculoComponent
     }
 ];
